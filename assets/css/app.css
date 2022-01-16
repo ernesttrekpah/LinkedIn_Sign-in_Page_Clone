@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif ;
+}
+
+:root{
+    --main-color:#0a66c2;
+    --white-color:#fff;
+    --dark-color:#000;
+    --hover-color:#004182;
+}
+
+body{
+    height: 100vh;
+}
+
+.signInContainer{
+   margin: 0 auto;
+    height: 83vh; 
+}
+
+.userPassword,.userName{
+  padding: 0.7rem;
+  border: 1.3px solid var(--dark-color) !important;
+}
+
+.userPassword:focus{
+    box-shadow: none;
+    border: 1.5px solid var(--hover-color) !important;  
+    transition: all ease-in-out .2s;
+}
+
+.userName:focus{
+    box-shadow: none;
+    border: 1.5px solid var(--hover-color) !important;
+    transition: all ease-in-out .2s;
+}
+
+.passwordShow{
+    position: relative;
+    top: -34px;
+    right: -17rem;
+    width: 1rem;
+}
+
+.passwordShow:hover{
+    background-color: rgb(161, 199, 255);
+    border-radius: 1rem;
+    color: var(--white-color);
+    padding: 5px;
+
+}
+
+/* Button Styling */
+
+.btnSignIn,.btnSubmit{
+    padding: 0.7rem;
+}
+
+.btnSignIn:hover{
+    background-color: var(--hover-color) !important;
+}
+
+
+
+
+
+
+@media only screen and (min-width:992px) {
+    .signInContainer{
+        width: 27%;
+    }
+}
+
+@media only screen and (max-width:875px) {
+    .signInContainer{
+        width: 27%;
+    }
+    .brandContainer{
+        width: 27%;
+    }   
+}
+
+@media only screen and (max-width:803px) {
+    .signInContainer{
+        width: 30%;
+    }
+    .brandContainer{
+        width: 30%;
+    }   
+}
+
+@media only screen and (min-width:893px) {
+    .signInContainer{
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width:893px) {
+    .brandContainer{
+        width: 100%;
+    }   
+}
